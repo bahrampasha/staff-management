@@ -1,0 +1,5 @@
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.Utilities\bin\Debug\Sarbaz.Utilities.dll
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.Utilities\bin\Debug\Sarbaz.Utilities.pdb
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.Utilities\obj\Debug\Sarbaz.Utilities.dll
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.Utilities\obj\Debug\Sarbaz.Utilities.pdb
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.Utilities\obj\Debug\Sarbaz.Utilities.csprojResolveAssemblyReference.cache

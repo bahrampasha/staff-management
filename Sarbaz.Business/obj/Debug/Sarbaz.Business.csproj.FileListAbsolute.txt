@@ -1,0 +1,10 @@
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.Business\bin\Debug\Sarbaz.Business.dll
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.Business\bin\Debug\Sarbaz.Business.pdb
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.Business\obj\Debug\Sarbaz.Business.dll
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.Business\obj\Debug\Sarbaz.Business.pdb
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.Business\obj\Debug\Sarbaz.Business.csprojResolveAssemblyReference.cache
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.Business\bin\Debug\Sarbaz.DataLayer.dll
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.Business\bin\Debug\EntityFramework.dll
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.Business\bin\Debug\Sarbaz.DataLayer.pdb
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.Business\bin\Debug\Sarbaz.DataLayer.dll.config
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.Business\bin\Debug\EntityFramework.xml

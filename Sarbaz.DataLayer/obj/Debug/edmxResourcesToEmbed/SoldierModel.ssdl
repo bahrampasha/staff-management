@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SoldierModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Education">
+    <Key>
+      <PropertyRef Name="EducationID" />
+    </Key>
+    <Property Name="EducationID" Type="tinyint" Nullable="false" />
+    <Property Name="EducationLevel" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Farar">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SoldierID" Type="int" />
+    <Property Name="type" Type="nvarchar" MaxLength="50" />
+    <Property Name="Date" Type="char" MaxLength="10" />
+    <Property Name="ExitDate" Type="char" MaxLength="10" />
+    <Property Name="EnterDate" Type="char" MaxLength="10" />
+    <Property Name="Description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Garrison">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Garrison" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="GarrisonForce" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Commander" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CommanderGrade" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="StaffCommander" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="StaffCommanderGrade" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SoldiersCommander" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SoldiersCommanderGrade" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Grade">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Grade" Type="nvarchar" MaxLength="50" />
+    <Property Name="Image" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Leavings">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SoldierID" Type="int" Nullable="false" />
+    <Property Name="ExitDate" Type="varchar" MaxLength="50" />
+    <Property Name="EnteranceDate" Type="varchar" MaxLength="50" />
+    <Property Name="Duration" Type="int" />
+    <Property Name="User" Type="nvarchar" MaxLength="50" />
+    <Property Name="Estehghaghi" Type="int" />
+    <Property Name="Tashvighi" Type="int" />
+    <Property Name="Esterahat" Type="int" />
+    <Property Name="Saati" Type="int" />
+    <Property Name="Estelaji" Type="int" />
+    <Property Name="Toorahi" Type="int" />
+    <Property Name="Date" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="properties">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FileNumber" Type="bigint" />
+    <Property Name="PersonnelID" Type="bigint" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="FamilyName" Type="nvarchar" MaxLength="50" />
+    <Property Name="FatherName" Type="nvarchar" MaxLength="50" />
+    <Property Name="NationalCode" Type="bigint" />
+    <Property Name="BirthDate" Type="nchar" MaxLength="10" />
+    <Property Name="Education" Type="tinyint" />
+    <Property Name="majority" Type="nvarchar" MaxLength="50" />
+    <Property Name="HomePhoneNumber" Type="bigint" />
+    <Property Name="Mobile" Type="bigint" />
+    <Property Name="Email" Type="varchar" MaxLength="250" />
+    <Property Name="PostalCode" Type="bigint" />
+    <Property Name="Bbirthplace" Type="nvarchar" MaxLength="50" />
+    <Property Name="Province" Type="tinyint" />
+    <Property Name="City" Type="int" />
+    <Property Name="Distance" Type="int" />
+    <Property Name="Married" Type="bit" />
+    <Property Name="Child" Type="tinyint" />
+    <Property Name="Adoption" Type="tinyint" />
+    <Property Name="Adress" Type="nvarchar(max)" />
+    <Property Name="Unit" Type="tinyint" />
+    <Property Name="image" Type="varbinary(max)" />
+    <Property Name="Raste" Type="int" />
+    <Property Name="Grade" Type="int" />
+    <Property Name="Garrison" Type="nvarchar" MaxLength="50" />
+    <Property Name="StartDate" Type="nchar" MaxLength="10" />
+    <Property Name="FinishDate" Type="nchar" MaxLength="10" />
+    <Property Name="DutyDurationMonth" Type="int" />
+    <Property Name="DutyDurationDay" Type="int" />
+    <Property Name="KasriMonth" Type="int" />
+    <Property Name="KasriDay" Type="int" />
+    <Property Name="EndOfTraining" Type="nchar" MaxLength="10" />
+    <Property Name="MilitarySchool" Type="nvarchar" MaxLength="50" />
+    <Property Name="RegisteringPlace" Type="nvarchar" MaxLength="50" />
+    <Property Name="TypeOfDuty" Type="nvarchar" MaxLength="20" />
+    <Property Name="TypeOfEnterance" Type="nvarchar" MaxLength="20" />
+    <Property Name="DutyRemaning" Type="int" />
+    <Property Name="EyeColor" Type="int" />
+    <Property Name="HairColor" Type="int" />
+    <Property Name="SkinColor" Type="int" />
+    <Property Name="BloodType" Type="int" />
+    <Property Name="Weight" Type="tinyint" />
+    <Property Name="Height" Type="tinyint" />
+    <Property Name="Glasses" Type="bit" />
+    <Property Name="SpecialSign" Type="nvarchar" MaxLength="50" />
+    <Property Name="PhysicalHealth" Type="tinyint" />
+    <Property Name="MentalHealth" Type="tinyint" />
+    <Property Name="DutyStatus" Type="nvarchar" MaxLength="20" />
+    <Property Name="IdentityPlaque" Type="varchar" MaxLength="15" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="Raste">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Raste" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TashvighTanbih">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SoldierID" Type="int" />
+    <Property Name="Type" Type="nvarchar" MaxLength="50" />
+    <Property Name="Duration" Type="int" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="Date" Type="varchar" MaxLength="50" />
+    <Property Name="User" Type="nvarchar" MaxLength="50" />
+    <Property Name="Commander" Type="nvarchar" MaxLength="50" />
+    <Property Name="Used" Type="nvarchar" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="Tbl_Ostan">
+    <Key>
+      <PropertyRef Name="OstanID" />
+    </Key>
+    <Property Name="OstanID" Type="int" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Tbl_Shahrestan">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="OstanID" Type="int" />
+    <Property Name="Title" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Unit">
+    <Key>
+      <PropertyRef Name="UnitID" />
+    </Key>
+    <Property Name="UnitID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Unit" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Leavings_properties">
+    <End Role="properties" Type="Self.properties" Multiplicity="1" />
+    <End Role="Leavings" Type="Self.Leavings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="properties">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Leavings">
+        <PropertyRef Name="SoldierID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_properties_Education">
+    <End Role="Education" Type="Self.Education" Multiplicity="0..1" />
+    <End Role="properties" Type="Self.properties" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Education">
+        <PropertyRef Name="EducationID" />
+      </Principal>
+      <Dependent Role="properties">
+        <PropertyRef Name="Education" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_properties_Unit">
+    <End Role="Unit" Type="Self.Unit" Multiplicity="0..1" />
+    <End Role="properties" Type="Self.properties" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Unit">
+        <PropertyRef Name="UnitID" />
+      </Principal>
+      <Dependent Role="properties">
+        <PropertyRef Name="Unit" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_Shahrestan_Tbl_Ostan">
+    <End Role="Tbl_Ostan" Type="Self.Tbl_Ostan" Multiplicity="0..1" />
+    <End Role="Tbl_Shahrestan" Type="Self.Tbl_Shahrestan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Ostan">
+        <PropertyRef Name="OstanID" />
+      </Principal>
+      <Dependent Role="Tbl_Shahrestan">
+        <PropertyRef Name="OstanID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SoldierModelStoreContainer">
+    <EntitySet Name="Education" EntityType="Self.Education" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Farar" EntityType="Self.Farar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Garrison" EntityType="Self.Garrison" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Grade" EntityType="Self.Grade" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Leavings" EntityType="Self.Leavings" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="properties" EntityType="Self.properties" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Raste" EntityType="Self.Raste" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TashvighTanbih" EntityType="Self.TashvighTanbih" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_Ostan" EntityType="Self.Tbl_Ostan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_Shahrestan" EntityType="Self.Tbl_Shahrestan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Unit" EntityType="Self.Unit" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Leavings_properties" Association="Self.FK_Leavings_properties">
+      <End Role="properties" EntitySet="properties" />
+      <End Role="Leavings" EntitySet="Leavings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_properties_Education" Association="Self.FK_properties_Education">
+      <End Role="Education" EntitySet="Education" />
+      <End Role="properties" EntitySet="properties" />
+    </AssociationSet>
+    <AssociationSet Name="FK_properties_Unit" Association="Self.FK_properties_Unit">
+      <End Role="Unit" EntitySet="Unit" />
+      <End Role="properties" EntitySet="properties" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_Shahrestan_Tbl_Ostan" Association="Self.FK_Tbl_Shahrestan_Tbl_Ostan">
+      <End Role="Tbl_Ostan" EntitySet="Tbl_Ostan" />
+      <End Role="Tbl_Shahrestan" EntitySet="Tbl_Shahrestan" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

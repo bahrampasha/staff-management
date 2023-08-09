@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A62573F6-326E-412E-BFFE-0127ECBCCD98}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sarbaz.DataLayer</RootNamespace>
+    <AssemblyName>Sarbaz.DataLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Context\UnitOfWork.cs" />
+    <Compile Include="Education.cs">
+      <DependentUpon>SoldierModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Farar.cs">
+      <DependentUpon>SoldierModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Garrison.cs">
+      <DependentUpon>SoldierModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Grade.cs">
+      <DependentUpon>SoldierModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Leavings.cs">
+      <DependentUpon>SoldierModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LetterMaker.cs" />
+    <Compile Include="properties.cs">
+      <DependentUpon>SoldierModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Raste.cs">
+      <DependentUpon>SoldierModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\IComboBoxChange.cs" />
+    <Compile Include="Repositories\IGarrison.cs" />
+    <Compile Include="Repositories\IImage.cs" />
+    <Compile Include="Repositories\ILeavingForm.cs" />
+    <Compile Include="Repositories\ISarbazRepository.cs" />
+    <Compile Include="Repositories\IStatistics.cs" />
+    <Compile Include="Services\ComboBoxChange.cs" />
+    <Compile Include="Services\GarrisonRepository.cs" />
+    <Compile Include="Services\ImageRepository.cs" />
+    <Compile Include="Services\LeavingHistory.cs" />
+    <Compile Include="Services\SoldierRepository.cs" />
+    <Compile Include="Services\StatisticsRepository.cs" />
+    <Compile Include="Services\TashvighiHistory.cs" />
+    <Compile Include="Services\TashvighiRepository.cs" />
+    <Compile Include="SoldierInfo.cs" />
+    <Compile Include="SoldierModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoldierModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SoldierModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoldierModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SoldierModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoldierModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="SoldiersFilter.cs" />
+    <Compile Include="TashvighTanbih.cs">
+      <DependentUpon>SoldierModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_Ostan.cs">
+      <DependentUpon>SoldierModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_Shahrestan.cs">
+      <DependentUpon>SoldierModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Unit.cs">
+      <DependentUpon>SoldierModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <EntityDeploy Include="SoldierModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SoldierModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="SoldierModel.edmx.diagram">
+      <DependentUpon>SoldierModel.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SoldierModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SoldierModel.edmx</DependentUpon>
+      <LastGenOutput>SoldierModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="SoldierModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SoldierModel.edmx</DependentUpon>
+      <LastGenOutput>SoldierModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sarbaz.Utilities\Sarbaz.Utilities.csproj">
+      <Project>{1DA40C62-91DB-4D16-A1F3-E1F0E5DC78B9}</Project>
+      <Name>Sarbaz.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

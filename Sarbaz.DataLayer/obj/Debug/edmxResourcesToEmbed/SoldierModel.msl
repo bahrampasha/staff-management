@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SoldierModelStoreContainer" CdmEntityContainer="SoldierEntities1">
+    <EntitySetMapping Name="Education">
+      <EntityTypeMapping TypeName="SoldierModel.Education">
+        <MappingFragment StoreEntitySet="Education">
+          <ScalarProperty Name="EducationLevel" ColumnName="EducationLevel" />
+          <ScalarProperty Name="EducationID" ColumnName="EducationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Farar">
+      <EntityTypeMapping TypeName="SoldierModel.Farar">
+        <MappingFragment StoreEntitySet="Farar">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="EnterDate" ColumnName="EnterDate" />
+          <ScalarProperty Name="ExitDate" ColumnName="ExitDate" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="SoldierID" ColumnName="SoldierID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Garrison">
+      <EntityTypeMapping TypeName="SoldierModel.Garrison">
+        <MappingFragment StoreEntitySet="Garrison">
+          <ScalarProperty Name="SoldiersCommanderGrade" ColumnName="SoldiersCommanderGrade" />
+          <ScalarProperty Name="SoldiersCommander" ColumnName="SoldiersCommander" />
+          <ScalarProperty Name="StaffCommanderGrade" ColumnName="StaffCommanderGrade" />
+          <ScalarProperty Name="StaffCommander" ColumnName="StaffCommander" />
+          <ScalarProperty Name="CommanderGrade" ColumnName="CommanderGrade" />
+          <ScalarProperty Name="Commander" ColumnName="Commander" />
+          <ScalarProperty Name="GarrisonForce" ColumnName="GarrisonForce" />
+          <ScalarProperty Name="Garrison1" ColumnName="Garrison" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Grade">
+      <EntityTypeMapping TypeName="SoldierModel.Grade">
+        <MappingFragment StoreEntitySet="Grade">
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Grade1" ColumnName="Grade" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Leavings">
+      <EntityTypeMapping TypeName="SoldierModel.Leavings">
+        <MappingFragment StoreEntitySet="Leavings">
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Toorahi" ColumnName="Toorahi" />
+          <ScalarProperty Name="Estelaji" ColumnName="Estelaji" />
+          <ScalarProperty Name="Saati" ColumnName="Saati" />
+          <ScalarProperty Name="Esterahat" ColumnName="Esterahat" />
+          <ScalarProperty Name="Tashvighi" ColumnName="Tashvighi" />
+          <ScalarProperty Name="Estehghaghi" ColumnName="Estehghaghi" />
+          <ScalarProperty Name="User" ColumnName="User" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="EnteranceDate" ColumnName="EnteranceDate" />
+          <ScalarProperty Name="ExitDate" ColumnName="ExitDate" />
+          <ScalarProperty Name="SoldierID" ColumnName="SoldierID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="properties">
+      <EntityTypeMapping TypeName="SoldierModel.properties">
+        <MappingFragment StoreEntitySet="properties">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IdentityPlaque" ColumnName="IdentityPlaque" />
+          <ScalarProperty Name="DutyStatus" ColumnName="DutyStatus" />
+          <ScalarProperty Name="MentalHealth" ColumnName="MentalHealth" />
+          <ScalarProperty Name="PhysicalHealth" ColumnName="PhysicalHealth" />
+          <ScalarProperty Name="SpecialSign" ColumnName="SpecialSign" />
+          <ScalarProperty Name="Glasses" ColumnName="Glasses" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="BloodType" ColumnName="BloodType" />
+          <ScalarProperty Name="SkinColor" ColumnName="SkinColor" />
+          <ScalarProperty Name="HairColor" ColumnName="HairColor" />
+          <ScalarProperty Name="EyeColor" ColumnName="EyeColor" />
+          <ScalarProperty Name="DutyRemaning" ColumnName="DutyRemaning" />
+          <ScalarProperty Name="TypeOfEnterance" ColumnName="TypeOfEnterance" />
+          <ScalarProperty Name="TypeOfDuty" ColumnName="TypeOfDuty" />
+          <ScalarProperty Name="RegisteringPlace" ColumnName="RegisteringPlace" />
+          <ScalarProperty Name="MilitarySchool" ColumnName="MilitarySchool" />
+          <ScalarProperty Name="EndOfTraining" ColumnName="EndOfTraining" />
+          <ScalarProperty Name="KasriDay" ColumnName="KasriDay" />
+          <ScalarProperty Name="KasriMonth" ColumnName="KasriMonth" />
+          <ScalarProperty Name="DutyDurationDay" ColumnName="DutyDurationDay" />
+          <ScalarProperty Name="DutyDurationMonth" ColumnName="DutyDurationMonth" />
+          <ScalarProperty Name="FinishDate" ColumnName="FinishDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="Garrison" ColumnName="Garrison" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="Raste" ColumnName="Raste" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Adress" ColumnName="Adress" />
+          <ScalarProperty Name="Adoption" ColumnName="Adoption" />
+          <ScalarProperty Name="Child" ColumnName="Child" />
+          <ScalarProperty Name="Married" ColumnName="Married" />
+          <ScalarProperty Name="Distance" ColumnName="Distance" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Province" ColumnName="Province" />
+          <ScalarProperty Name="Bbirthplace" ColumnName="Bbirthplace" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="HomePhoneNumber" ColumnName="HomePhoneNumber" />
+          <ScalarProperty Name="majority" ColumnName="majority" />
+          <ScalarProperty Name="Education" ColumnName="Education" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="NationalCode" ColumnName="NationalCode" />
+          <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+          <ScalarProperty Name="FamilyName" ColumnName="FamilyName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PersonnelID" ColumnName="PersonnelID" />
+          <ScalarProperty Name="FileNumber" ColumnName="FileNumber" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Raste">
+      <EntityTypeMapping TypeName="SoldierModel.Raste">
+        <MappingFragment StoreEntitySet="Raste">
+          <ScalarProperty Name="Raste1" ColumnName="Raste" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TashvighTanbih">
+      <EntityTypeMapping TypeName="SoldierModel.TashvighTanbih">
+        <MappingFragment StoreEntitySet="TashvighTanbih">
+          <ScalarProperty Name="Used" ColumnName="Used" />
+          <ScalarProperty Name="Commander" ColumnName="Commander" />
+          <ScalarProperty Name="User" ColumnName="User" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="SoldierID" ColumnName="SoldierID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Ostan">
+      <EntityTypeMapping TypeName="SoldierModel.Tbl_Ostan">
+        <MappingFragment StoreEntitySet="Tbl_Ostan">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="OstanID" ColumnName="OstanID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Shahrestan">
+      <EntityTypeMapping TypeName="SoldierModel.Tbl_Shahrestan">
+        <MappingFragment StoreEntitySet="Tbl_Shahrestan">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="OstanID" ColumnName="OstanID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Unit">
+      <EntityTypeMapping TypeName="SoldierModel.Unit">
+        <MappingFragment StoreEntitySet="Unit">
+          <ScalarProperty Name="Unit1" ColumnName="Unit" />
+          <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

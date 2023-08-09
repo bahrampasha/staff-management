@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5659C3B1-AAC3-49F7-883A-21DF985D6E9C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Sarbaz</RootNamespace>
+    <AssemblyName>Sarbaz</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Bahrampasha\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>main.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>FD60244824A7727BA91F097840DCCB3131354562</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Sarbaz_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdvancedDataGridView, Version=0.1.0.10, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ADGV.0.1.0.10\lib\net40\AdvancedDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiMessageBox">
+      <HintPath>..\..\..\..\..\Downloads\FarsiMessageBoxDLL-ZarrinHoor\FarsiMessageBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2019.2.3.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a" />
+    <Reference Include="Stimulsoft.Controls.Win, Version=2019.2.3.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Stimulsoft Ultimate 2019.2.3\Designers\.NET\Stimulsoft.Controls.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Data, Version=2019.2.3.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a" />
+    <Reference Include="Stimulsoft.Report, Version=2019.2.3.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Report.Win, Version=2019.2.3.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Stimulsoft Ultimate 2019.2.3\Designers\.NET\Stimulsoft.Report.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLetters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLetters.Designer.cs">
+      <DependentUpon>frmLetters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLeave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLeave.Designer.cs">
+      <DependentUpon>frmLeave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonalInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonalInfo.Designer.cs">
+      <DependentUpon>frmPersonalInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInitialize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInitialize.Designer.cs">
+      <DependentUpon>frmInitialize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReports.Designer.cs">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearch.Designer.cs">
+      <DependentUpon>frmSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Rank.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rank.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Raste.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Raste.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLetters.resx">
+      <DependentUpon>frmLetters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLeave.resx">
+      <DependentUpon>frmLeave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonalInfo.resx">
+      <DependentUpon>frmPersonalInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInitialize.resx">
+      <DependentUpon>frmInitialize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReports.resx">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearch.resx">
+      <DependentUpon>frmSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rank.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Rank.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Raste.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Raste.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\DataSources\Sarbaz.DataLayer.Education.datasource" />
+    <None Include="Properties\DataSources\Sarbaz.DataLayer.Tbl_Ostan.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Sarbaz_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Seal_of_the_Army_of_the_Guardians_of_the_Islamic_Revolution.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="main.ico" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\report-02.png" />
+    <None Include="Resources\trash2.png" />
+    <None Include="Resources\raste9.png" />
+    <None Include="Resources\raste8.png" />
+    <None Include="Resources\raste7.png" />
+    <None Include="Resources\raste6.png" />
+    <None Include="Resources\raste5.png" />
+    <None Include="Resources\raste4.png" />
+    <None Include="Resources\raste3.png" />
+    <None Include="Resources\raste2.png" />
+    <None Include="Resources\raste1.png" />
+    <None Include="Resources\raste19.png" />
+    <None Include="Resources\raste18.png" />
+    <None Include="Resources\raste17.png" />
+    <None Include="Resources\raste16.png" />
+    <None Include="Resources\raste15.png" />
+    <None Include="Resources\raste14.png" />
+    <None Include="Resources\raste13.png" />
+    <None Include="Resources\raste12.png" />
+    <None Include="Resources\raste11.png" />
+    <None Include="Resources\raste10.png" />
+    <None Include="Resources\unknown2-01.png" />
+    <None Include="Resources\SearchLetter.png" />
+    <None Include="Resources\printer.png" />
+    <None Include="Resources\newRecord.png" />
+    <None Include="Resources\leave.png" />
+    <None Include="Resources\submit.png" />
+    <None Include="Resources\SearchIcon-01-01-01.png" />
+    <None Include="Resources\search-01.png" />
+    <None Include="Resources\search2-01.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\Personal-01.png" />
+    <None Include="Resources\Untitled-1.png" />
+    <Content Include="Resources\1396020209492360105985710.jpg" />
+    <None Include="Resources\letter.png" />
+    <None Include="Resources\Untitled-11.png" />
+    <None Include="Resources\soldier.png" />
+    <None Include="Resources\images1.png" />
+    <None Include="Resources\13960202094923601059857101.jpg" />
+    <None Include="Resources\clipboard.png" />
+    <None Include="Resources\Icon1.ico" />
+    <None Include="Resources\agha-va-emam2.jpg" />
+    <None Include="Resources\background.jpg" />
+    <None Include="Resources\iconfinder_Log Out_27856.png" />
+    <None Include="Resources\800px-IRGC-Infantry-Branch.svg.png" />
+    <None Include="Resources\daraje1.png" />
+    <None Include="Resources\daraje2.png" />
+    <None Include="Resources\daraje3.png" />
+    <None Include="Resources\daraje4.png" />
+    <None Include="Resources\daraje5.png" />
+    <None Include="Resources\daraje6.png" />
+    <None Include="Resources\daraje7.png" />
+    <None Include="Resources\daraje8.png" />
+    <None Include="Resources\daraje9.png" />
+    <None Include="Resources\daraje10.png" />
+    <None Include="Resources\daraje11.png" />
+    <None Include="Resources\daraje12.png" />
+    <None Include="Resources\daraje13.png" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\check.png" />
+    <None Include="Resources\background1.jpg" />
+    <None Include="Resources\formClear-02.png" />
+    <None Include="Resources\formClear-03.png" />
+    <Content Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sarbaz.Business\Sarbaz.Business.csproj">
+      <Project>{543D8131-F93D-4188-8FD7-6494283AEB83}</Project>
+      <Name>Sarbaz.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sarbaz.DataLayer\Sarbaz.DataLayer.csproj">
+      <Project>{a62573f6-326e-412e-bffe-0127ecbccd98}</Project>
+      <Name>Sarbaz.DataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sarbaz.Utilities\Sarbaz.Utilities.csproj">
+      <Project>{1da40c62-91db-4d16-a1f3-e1f0e5dc78b9}</Project>
+      <Name>Sarbaz.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

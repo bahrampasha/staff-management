@@ -1,0 +1,691 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SoldierModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Education">
+          <Key>
+            <PropertyRef Name="EducationID" />
+          </Key>
+          <Property Name="EducationID" Type="tinyint" Nullable="false" />
+          <Property Name="EducationLevel" Type="nvarchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Farar">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SoldierID" Type="int" />
+          <Property Name="type" Type="nvarchar" MaxLength="50" />
+          <Property Name="Date" Type="char" MaxLength="10" />
+          <Property Name="ExitDate" Type="char" MaxLength="10" />
+          <Property Name="EnterDate" Type="char" MaxLength="10" />
+          <Property Name="Description" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Garrison">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Garrison" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="GarrisonForce" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Commander" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CommanderGrade" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="StaffCommander" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="StaffCommanderGrade" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="SoldiersCommander" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="SoldiersCommanderGrade" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Grade">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Grade" Type="nvarchar" MaxLength="50" />
+          <Property Name="Image" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Leavings">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SoldierID" Type="int" Nullable="false" />
+          <Property Name="ExitDate" Type="varchar" MaxLength="50" />
+          <Property Name="EnteranceDate" Type="varchar" MaxLength="50" />
+          <Property Name="Duration" Type="int" />
+          <Property Name="User" Type="nvarchar" MaxLength="50" />
+          <Property Name="Estehghaghi" Type="int" />
+          <Property Name="Tashvighi" Type="int" />
+          <Property Name="Esterahat" Type="int" />
+          <Property Name="Saati" Type="int" />
+          <Property Name="Estelaji" Type="int" />
+          <Property Name="Toorahi" Type="int" />
+          <Property Name="Date" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="properties">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FileNumber" Type="bigint" />
+          <Property Name="PersonnelID" Type="bigint" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="FamilyName" Type="nvarchar" MaxLength="50" />
+          <Property Name="FatherName" Type="nvarchar" MaxLength="50" />
+          <Property Name="NationalCode" Type="bigint" />
+          <Property Name="BirthDate" Type="nchar" MaxLength="10" />
+          <Property Name="Education" Type="tinyint" />
+          <Property Name="majority" Type="nvarchar" MaxLength="50" />
+          <Property Name="HomePhoneNumber" Type="bigint" />
+          <Property Name="Mobile" Type="bigint" />
+          <Property Name="Email" Type="varchar" MaxLength="250" />
+          <Property Name="PostalCode" Type="bigint" />
+          <Property Name="Bbirthplace" Type="nvarchar" MaxLength="50" />
+          <Property Name="Province" Type="tinyint" />
+          <Property Name="City" Type="int" />
+          <Property Name="Distance" Type="int" />
+          <Property Name="Married" Type="bit" />
+          <Property Name="Child" Type="tinyint" />
+          <Property Name="Adoption" Type="tinyint" />
+          <Property Name="Adress" Type="nvarchar(max)" />
+          <Property Name="Unit" Type="tinyint" />
+          <Property Name="image" Type="varbinary(max)" />
+          <Property Name="Raste" Type="int" />
+          <Property Name="Grade" Type="int" />
+          <Property Name="Garrison" Type="nvarchar" MaxLength="50" />
+          <Property Name="StartDate" Type="nchar" MaxLength="10" />
+          <Property Name="FinishDate" Type="nchar" MaxLength="10" />
+          <Property Name="DutyDurationMonth" Type="int" />
+          <Property Name="DutyDurationDay" Type="int" />
+          <Property Name="KasriMonth" Type="int" />
+          <Property Name="KasriDay" Type="int" />
+          <Property Name="EndOfTraining" Type="nchar" MaxLength="10" />
+          <Property Name="MilitarySchool" Type="nvarchar" MaxLength="50" />
+          <Property Name="RegisteringPlace" Type="nvarchar" MaxLength="50" />
+          <Property Name="TypeOfDuty" Type="nvarchar" MaxLength="20" />
+          <Property Name="TypeOfEnterance" Type="nvarchar" MaxLength="20" />
+          <Property Name="DutyRemaning" Type="int" />
+          <Property Name="EyeColor" Type="int" />
+          <Property Name="HairColor" Type="int" />
+          <Property Name="SkinColor" Type="int" />
+          <Property Name="BloodType" Type="int" />
+          <Property Name="Weight" Type="tinyint" />
+          <Property Name="Height" Type="tinyint" />
+          <Property Name="Glasses" Type="bit" />
+          <Property Name="SpecialSign" Type="nvarchar" MaxLength="50" />
+          <Property Name="PhysicalHealth" Type="tinyint" />
+          <Property Name="MentalHealth" Type="tinyint" />
+          <Property Name="DutyStatus" Type="nvarchar" MaxLength="20" />
+          <Property Name="IdentityPlaque" Type="varchar" MaxLength="15" />
+          <Property Name="Description" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="Raste">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Raste" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TashvighTanbih">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SoldierID" Type="int" />
+          <Property Name="Type" Type="nvarchar" MaxLength="50" />
+          <Property Name="Duration" Type="int" />
+          <Property Name="Description" Type="nvarchar" MaxLength="50" />
+          <Property Name="Date" Type="varchar" MaxLength="50" />
+          <Property Name="User" Type="nvarchar" MaxLength="50" />
+          <Property Name="Commander" Type="nvarchar" MaxLength="50" />
+          <Property Name="Used" Type="nvarchar" MaxLength="3" />
+        </EntityType>
+        <EntityType Name="Tbl_Ostan">
+          <Key>
+            <PropertyRef Name="OstanID" />
+          </Key>
+          <Property Name="OstanID" Type="int" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Tbl_Shahrestan">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="OstanID" Type="int" />
+          <Property Name="Title" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Unit">
+          <Key>
+            <PropertyRef Name="UnitID" />
+          </Key>
+          <Property Name="UnitID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Unit" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_Leavings_properties">
+          <End Role="properties" Type="Self.properties" Multiplicity="1" />
+          <End Role="Leavings" Type="Self.Leavings" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="properties">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Leavings">
+              <PropertyRef Name="SoldierID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_properties_Education">
+          <End Role="Education" Type="Self.Education" Multiplicity="0..1" />
+          <End Role="properties" Type="Self.properties" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Education">
+              <PropertyRef Name="EducationID" />
+            </Principal>
+            <Dependent Role="properties">
+              <PropertyRef Name="Education" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_properties_Unit">
+          <End Role="Unit" Type="Self.Unit" Multiplicity="0..1" />
+          <End Role="properties" Type="Self.properties" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Unit">
+              <PropertyRef Name="UnitID" />
+            </Principal>
+            <Dependent Role="properties">
+              <PropertyRef Name="Unit" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tbl_Shahrestan_Tbl_Ostan">
+          <End Role="Tbl_Ostan" Type="Self.Tbl_Ostan" Multiplicity="0..1" />
+          <End Role="Tbl_Shahrestan" Type="Self.Tbl_Shahrestan" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tbl_Ostan">
+              <PropertyRef Name="OstanID" />
+            </Principal>
+            <Dependent Role="Tbl_Shahrestan">
+              <PropertyRef Name="OstanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SoldierModelStoreContainer">
+          <EntitySet Name="Education" EntityType="Self.Education" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Farar" EntityType="Self.Farar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Garrison" EntityType="Self.Garrison" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Grade" EntityType="Self.Grade" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Leavings" EntityType="Self.Leavings" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="properties" EntityType="Self.properties" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Raste" EntityType="Self.Raste" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TashvighTanbih" EntityType="Self.TashvighTanbih" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tbl_Ostan" EntityType="Self.Tbl_Ostan" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tbl_Shahrestan" EntityType="Self.Tbl_Shahrestan" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Unit" EntityType="Self.Unit" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Leavings_properties" Association="Self.FK_Leavings_properties">
+            <End Role="properties" EntitySet="properties" />
+            <End Role="Leavings" EntitySet="Leavings" />
+          </AssociationSet>
+          <AssociationSet Name="FK_properties_Education" Association="Self.FK_properties_Education">
+            <End Role="Education" EntitySet="Education" />
+            <End Role="properties" EntitySet="properties" />
+          </AssociationSet>
+          <AssociationSet Name="FK_properties_Unit" Association="Self.FK_properties_Unit">
+            <End Role="Unit" EntitySet="Unit" />
+            <End Role="properties" EntitySet="properties" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tbl_Shahrestan_Tbl_Ostan" Association="Self.FK_Tbl_Shahrestan_Tbl_Ostan">
+            <End Role="Tbl_Ostan" EntitySet="Tbl_Ostan" />
+            <End Role="Tbl_Shahrestan" EntitySet="Tbl_Shahrestan" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SoldierModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="SoldierEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Education" EntityType="SoldierModel.Education" />
+          <EntitySet Name="Farar" EntityType="SoldierModel.Farar" />
+          <EntitySet Name="Garrison" EntityType="SoldierModel.Garrison" />
+          <EntitySet Name="Grade" EntityType="SoldierModel.Grade" />
+          <EntitySet Name="Leavings" EntityType="SoldierModel.Leavings" />
+          <EntitySet Name="properties" EntityType="SoldierModel.properties" />
+          <EntitySet Name="Raste" EntityType="SoldierModel.Raste" />
+          <EntitySet Name="TashvighTanbih" EntityType="SoldierModel.TashvighTanbih" />
+          <EntitySet Name="Tbl_Ostan" EntityType="SoldierModel.Tbl_Ostan" />
+          <EntitySet Name="Tbl_Shahrestan" EntityType="SoldierModel.Tbl_Shahrestan" />
+          <EntitySet Name="Unit" EntityType="SoldierModel.Unit" />
+          <AssociationSet Name="FK_properties_Education" Association="SoldierModel.FK_properties_Education">
+            <End Role="Education" EntitySet="Education" />
+            <End Role="properties" EntitySet="properties" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Leavings_properties" Association="SoldierModel.FK_Leavings_properties">
+            <End Role="properties" EntitySet="properties" />
+            <End Role="Leavings" EntitySet="Leavings" />
+          </AssociationSet>
+          <AssociationSet Name="FK_properties_Unit" Association="SoldierModel.FK_properties_Unit">
+            <End Role="Unit" EntitySet="Unit" />
+            <End Role="properties" EntitySet="properties" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tbl_Shahrestan_Tbl_Ostan" Association="SoldierModel.FK_Tbl_Shahrestan_Tbl_Ostan">
+            <End Role="Tbl_Ostan" EntitySet="Tbl_Ostan" />
+            <End Role="Tbl_Shahrestan" EntitySet="Tbl_Shahrestan" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Education">
+          <Key>
+            <PropertyRef Name="EducationID" />
+          </Key>
+          <Property Name="EducationID" Type="Byte" Nullable="false" />
+          <Property Name="EducationLevel" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="properties" Relationship="SoldierModel.FK_properties_Education" FromRole="Education" ToRole="properties" />
+        </EntityType>
+        <EntityType Name="Farar">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SoldierID" Type="Int32" />
+          <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Date" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="ExitDate" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="EnterDate" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Garrison">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Garrison1" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="GarrisonForce" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Commander" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CommanderGrade" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="StaffCommander" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="StaffCommanderGrade" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SoldiersCommander" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SoldiersCommanderGrade" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Grade">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Grade1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Leavings">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SoldierID" Type="Int32" Nullable="false" />
+          <Property Name="ExitDate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="EnteranceDate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Duration" Type="Int32" />
+          <Property Name="User" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Estehghaghi" Type="Int32" />
+          <Property Name="Tashvighi" Type="Int32" />
+          <Property Name="Esterahat" Type="Int32" />
+          <Property Name="Saati" Type="Int32" />
+          <Property Name="Estelaji" Type="Int32" />
+          <Property Name="Toorahi" Type="Int32" />
+          <Property Name="Date" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="properties" Relationship="SoldierModel.FK_Leavings_properties" FromRole="Leavings" ToRole="properties" />
+        </EntityType>
+        <EntityType Name="properties">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FileNumber" Type="Int64" />
+          <Property Name="PersonnelID" Type="Int64" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FamilyName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FatherName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NationalCode" Type="Int64" />
+          <Property Name="BirthDate" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Education" Type="Byte" />
+          <Property Name="majority" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="HomePhoneNumber" Type="Int64" />
+          <Property Name="Mobile" Type="Int64" />
+          <Property Name="Email" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="PostalCode" Type="Int64" />
+          <Property Name="Bbirthplace" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Province" Type="Byte" />
+          <Property Name="City" Type="Int32" />
+          <Property Name="Distance" Type="Int32" />
+          <Property Name="Married" Type="Boolean" />
+          <Property Name="Child" Type="Byte" />
+          <Property Name="Adoption" Type="Byte" />
+          <Property Name="Adress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Unit" Type="Byte" />
+          <Property Name="image" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Raste" Type="Int32" />
+          <Property Name="Grade" Type="Int32" />
+          <Property Name="Garrison" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="StartDate" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="FinishDate" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="DutyDurationMonth" Type="Int32" />
+          <Property Name="DutyDurationDay" Type="Int32" />
+          <Property Name="KasriMonth" Type="Int32" />
+          <Property Name="KasriDay" Type="Int32" />
+          <Property Name="EndOfTraining" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="MilitarySchool" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RegisteringPlace" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TypeOfDuty" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="TypeOfEnterance" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="DutyRemaning" Type="Int32" />
+          <Property Name="EyeColor" Type="Int32" />
+          <Property Name="HairColor" Type="Int32" />
+          <Property Name="SkinColor" Type="Int32" />
+          <Property Name="BloodType" Type="Int32" />
+          <Property Name="Weight" Type="Byte" />
+          <Property Name="Height" Type="Byte" />
+          <Property Name="Glasses" Type="Boolean" />
+          <Property Name="SpecialSign" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PhysicalHealth" Type="Byte" />
+          <Property Name="MentalHealth" Type="Byte" />
+          <Property Name="DutyStatus" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="IdentityPlaque" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Education1" Relationship="SoldierModel.FK_properties_Education" FromRole="properties" ToRole="Education" />
+          <NavigationProperty Name="Leavings" Relationship="SoldierModel.FK_Leavings_properties" FromRole="properties" ToRole="Leavings" />
+          <NavigationProperty Name="Unit1" Relationship="SoldierModel.FK_properties_Unit" FromRole="properties" ToRole="Unit" />
+        </EntityType>
+        <EntityType Name="Raste">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Raste1" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TashvighTanbih">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SoldierID" Type="Int32" />
+          <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Duration" Type="Int32" />
+          <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Date" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="User" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Commander" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Used" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Tbl_Ostan">
+          <Key>
+            <PropertyRef Name="OstanID" />
+          </Key>
+          <Property Name="OstanID" Type="Int32" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Tbl_Shahrestan" Relationship="SoldierModel.FK_Tbl_Shahrestan_Tbl_Ostan" FromRole="Tbl_Ostan" ToRole="Tbl_Shahrestan" />
+        </EntityType>
+        <EntityType Name="Tbl_Shahrestan">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="OstanID" Type="Int32" />
+          <Property Name="Title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Tbl_Ostan" Relationship="SoldierModel.FK_Tbl_Shahrestan_Tbl_Ostan" FromRole="Tbl_Shahrestan" ToRole="Tbl_Ostan" />
+        </EntityType>
+        <EntityType Name="Unit">
+          <Key>
+            <PropertyRef Name="UnitID" />
+          </Key>
+          <Property Name="UnitID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Unit1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="properties" Relationship="SoldierModel.FK_properties_Unit" FromRole="Unit" ToRole="properties" />
+        </EntityType>
+        <Association Name="FK_properties_Education">
+          <End Type="SoldierModel.Education" Role="Education" Multiplicity="0..1" />
+          <End Type="SoldierModel.properties" Role="properties" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Education">
+              <PropertyRef Name="EducationID" />
+            </Principal>
+            <Dependent Role="properties">
+              <PropertyRef Name="Education" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Leavings_properties">
+          <End Type="SoldierModel.properties" Role="properties" Multiplicity="1" />
+          <End Type="SoldierModel.Leavings" Role="Leavings" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="properties">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Leavings">
+              <PropertyRef Name="SoldierID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_properties_Unit">
+          <End Type="SoldierModel.Unit" Role="Unit" Multiplicity="0..1" />
+          <End Type="SoldierModel.properties" Role="properties" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Unit">
+              <PropertyRef Name="UnitID" />
+            </Principal>
+            <Dependent Role="properties">
+              <PropertyRef Name="Unit" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tbl_Shahrestan_Tbl_Ostan">
+          <End Type="SoldierModel.Tbl_Ostan" Role="Tbl_Ostan" Multiplicity="0..1" />
+          <End Type="SoldierModel.Tbl_Shahrestan" Role="Tbl_Shahrestan" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tbl_Ostan">
+              <PropertyRef Name="OstanID" />
+            </Principal>
+            <Dependent Role="Tbl_Shahrestan">
+              <PropertyRef Name="OstanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SoldierModelStoreContainer" CdmEntityContainer="SoldierEntities1">
+          <EntitySetMapping Name="Education">
+            <EntityTypeMapping TypeName="SoldierModel.Education">
+              <MappingFragment StoreEntitySet="Education">
+                <ScalarProperty Name="EducationLevel" ColumnName="EducationLevel" />
+                <ScalarProperty Name="EducationID" ColumnName="EducationID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Farar">
+            <EntityTypeMapping TypeName="SoldierModel.Farar">
+              <MappingFragment StoreEntitySet="Farar">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="EnterDate" ColumnName="EnterDate" />
+                <ScalarProperty Name="ExitDate" ColumnName="ExitDate" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="SoldierID" ColumnName="SoldierID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Garrison">
+            <EntityTypeMapping TypeName="SoldierModel.Garrison">
+              <MappingFragment StoreEntitySet="Garrison">
+                <ScalarProperty Name="SoldiersCommanderGrade" ColumnName="SoldiersCommanderGrade" />
+                <ScalarProperty Name="SoldiersCommander" ColumnName="SoldiersCommander" />
+                <ScalarProperty Name="StaffCommanderGrade" ColumnName="StaffCommanderGrade" />
+                <ScalarProperty Name="StaffCommander" ColumnName="StaffCommander" />
+                <ScalarProperty Name="CommanderGrade" ColumnName="CommanderGrade" />
+                <ScalarProperty Name="Commander" ColumnName="Commander" />
+                <ScalarProperty Name="GarrisonForce" ColumnName="GarrisonForce" />
+                <ScalarProperty Name="Garrison1" ColumnName="Garrison" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Grade">
+            <EntityTypeMapping TypeName="SoldierModel.Grade">
+              <MappingFragment StoreEntitySet="Grade">
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="Grade1" ColumnName="Grade" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Leavings">
+            <EntityTypeMapping TypeName="SoldierModel.Leavings">
+              <MappingFragment StoreEntitySet="Leavings">
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Toorahi" ColumnName="Toorahi" />
+                <ScalarProperty Name="Estelaji" ColumnName="Estelaji" />
+                <ScalarProperty Name="Saati" ColumnName="Saati" />
+                <ScalarProperty Name="Esterahat" ColumnName="Esterahat" />
+                <ScalarProperty Name="Tashvighi" ColumnName="Tashvighi" />
+                <ScalarProperty Name="Estehghaghi" ColumnName="Estehghaghi" />
+                <ScalarProperty Name="User" ColumnName="User" />
+                <ScalarProperty Name="Duration" ColumnName="Duration" />
+                <ScalarProperty Name="EnteranceDate" ColumnName="EnteranceDate" />
+                <ScalarProperty Name="ExitDate" ColumnName="ExitDate" />
+                <ScalarProperty Name="SoldierID" ColumnName="SoldierID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="properties">
+            <EntityTypeMapping TypeName="SoldierModel.properties">
+              <MappingFragment StoreEntitySet="properties">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="IdentityPlaque" ColumnName="IdentityPlaque" />
+                <ScalarProperty Name="DutyStatus" ColumnName="DutyStatus" />
+                <ScalarProperty Name="MentalHealth" ColumnName="MentalHealth" />
+                <ScalarProperty Name="PhysicalHealth" ColumnName="PhysicalHealth" />
+                <ScalarProperty Name="SpecialSign" ColumnName="SpecialSign" />
+                <ScalarProperty Name="Glasses" ColumnName="Glasses" />
+                <ScalarProperty Name="Height" ColumnName="Height" />
+                <ScalarProperty Name="Weight" ColumnName="Weight" />
+                <ScalarProperty Name="BloodType" ColumnName="BloodType" />
+                <ScalarProperty Name="SkinColor" ColumnName="SkinColor" />
+                <ScalarProperty Name="HairColor" ColumnName="HairColor" />
+                <ScalarProperty Name="EyeColor" ColumnName="EyeColor" />
+                <ScalarProperty Name="DutyRemaning" ColumnName="DutyRemaning" />
+                <ScalarProperty Name="TypeOfEnterance" ColumnName="TypeOfEnterance" />
+                <ScalarProperty Name="TypeOfDuty" ColumnName="TypeOfDuty" />
+                <ScalarProperty Name="RegisteringPlace" ColumnName="RegisteringPlace" />
+                <ScalarProperty Name="MilitarySchool" ColumnName="MilitarySchool" />
+                <ScalarProperty Name="EndOfTraining" ColumnName="EndOfTraining" />
+                <ScalarProperty Name="KasriDay" ColumnName="KasriDay" />
+                <ScalarProperty Name="KasriMonth" ColumnName="KasriMonth" />
+                <ScalarProperty Name="DutyDurationDay" ColumnName="DutyDurationDay" />
+                <ScalarProperty Name="DutyDurationMonth" ColumnName="DutyDurationMonth" />
+                <ScalarProperty Name="FinishDate" ColumnName="FinishDate" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="Garrison" ColumnName="Garrison" />
+                <ScalarProperty Name="Grade" ColumnName="Grade" />
+                <ScalarProperty Name="Raste" ColumnName="Raste" />
+                <ScalarProperty Name="image" ColumnName="image" />
+                <ScalarProperty Name="Unit" ColumnName="Unit" />
+                <ScalarProperty Name="Adress" ColumnName="Adress" />
+                <ScalarProperty Name="Adoption" ColumnName="Adoption" />
+                <ScalarProperty Name="Child" ColumnName="Child" />
+                <ScalarProperty Name="Married" ColumnName="Married" />
+                <ScalarProperty Name="Distance" ColumnName="Distance" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Province" ColumnName="Province" />
+                <ScalarProperty Name="Bbirthplace" ColumnName="Bbirthplace" />
+                <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="HomePhoneNumber" ColumnName="HomePhoneNumber" />
+                <ScalarProperty Name="majority" ColumnName="majority" />
+                <ScalarProperty Name="Education" ColumnName="Education" />
+                <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+                <ScalarProperty Name="NationalCode" ColumnName="NationalCode" />
+                <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+                <ScalarProperty Name="FamilyName" ColumnName="FamilyName" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="PersonnelID" ColumnName="PersonnelID" />
+                <ScalarProperty Name="FileNumber" ColumnName="FileNumber" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Raste">
+            <EntityTypeMapping TypeName="SoldierModel.Raste">
+              <MappingFragment StoreEntitySet="Raste">
+                <ScalarProperty Name="Raste1" ColumnName="Raste" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TashvighTanbih">
+            <EntityTypeMapping TypeName="SoldierModel.TashvighTanbih">
+              <MappingFragment StoreEntitySet="TashvighTanbih">
+                <ScalarProperty Name="Used" ColumnName="Used" />
+                <ScalarProperty Name="Commander" ColumnName="Commander" />
+                <ScalarProperty Name="User" ColumnName="User" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Duration" ColumnName="Duration" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="SoldierID" ColumnName="SoldierID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tbl_Ostan">
+            <EntityTypeMapping TypeName="SoldierModel.Tbl_Ostan">
+              <MappingFragment StoreEntitySet="Tbl_Ostan">
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="OstanID" ColumnName="OstanID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tbl_Shahrestan">
+            <EntityTypeMapping TypeName="SoldierModel.Tbl_Shahrestan">
+              <MappingFragment StoreEntitySet="Tbl_Shahrestan">
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="OstanID" ColumnName="OstanID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Unit">
+            <EntityTypeMapping TypeName="SoldierModel.Unit">
+              <MappingFragment StoreEntitySet="Unit">
+                <ScalarProperty Name="Unit1" ColumnName="Unit" />
+                <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

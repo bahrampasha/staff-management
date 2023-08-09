@@ -1,0 +1,5 @@
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.ViewModel\bin\Debug\Sarbaz.ViewModel.dll
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.ViewModel\bin\Debug\Sarbaz.ViewModel.pdb
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.ViewModel\obj\Debug\Sarbaz.ViewModel.dll
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.ViewModel\obj\Debug\Sarbaz.ViewModel.pdb
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.ViewModel\obj\Debug\Sarbaz.ViewModel.csprojResolveAssemblyReference.cache

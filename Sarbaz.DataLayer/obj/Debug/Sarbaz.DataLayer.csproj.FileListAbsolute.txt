@@ -1,0 +1,12 @@
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.DataLayer\bin\Debug\Sarbaz.DataLayer.dll.config
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.DataLayer\bin\Debug\Sarbaz.DataLayer.dll
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.DataLayer\bin\Debug\Sarbaz.DataLayer.pdb
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.DataLayer\obj\Debug\Sarbaz.DataLayer.dll
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.DataLayer\obj\Debug\Sarbaz.DataLayer.pdb
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.DataLayer\obj\Debug\Sarbaz.DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.DataLayer\bin\Debug\Sarbaz.Utilities.dll
+C:\Users\Bahrampasha\documents\visual studio 2017\Projects\Sarbaz\Sarbaz.DataLayer\bin\Debug\Sarbaz.Utilities.pdb
